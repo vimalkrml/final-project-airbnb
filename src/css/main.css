@@ -5,19 +5,26 @@
 @tailwind utilities;
 
 .stickynav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  width: 100%;
+  position: sticky;
+  top: 0;
+  visibility: hidden;
   z-index: 10;
   transition: 200ms ease-in-out;
   background: transparent;
-  visibility: hidden;
+}
+.sticky_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .changecolour {
   visibility: visible;
   background-color: white;
   color: black;
+}
+
+.nav_right {
+  visibility: visible;
 }

@@ -13,25 +13,6 @@
     <script src="https://unpkg.com/flowbite@1.5.1/dist/datepicker.js"></script>
   </head>
   <body class="font-Primary text-[#222222]">
-    <!-- <nav class="stickynav px-10 lg:px-16 py-5 xl:px-28 2xl:px-[200px]">
-      <div class="flex items-center gap-5">
-        <a href="" class="">Photos</a>
-        <a href="" class="">Amenities</a>
-        <a href="" class="">Reviews</a>
-        <a href="" class="">Location</a>
-      </div>
-      <div class="flex items-center gap-4">
-        <h1 class="font-semibold">
-          ₹1,45,522 <span class="font-normal">night</span>
-        </h1>
-        <div
-          class="px-10 py-3 bg-[#ff385c] text-white font-medium rounded-lg text-center"
-        >
-          <button type="button">Check availability</button>
-        </div>
-      </div>
-    </nav> -->
-
     <header class="hidden md:block border-b mb-2">
       <div class="px-10 lg:px-16 py-[5px] xl:px-28 2xl:px-[200px]">
         <nav class="flex items-center justify-between py-3 lg:py-2">
@@ -162,9 +143,12 @@
       </div>
     </header>
 
-    <main class="hibro">
+    <main>
       <section>
-        <div class="md:mx-10 lg:mx-16 xl:mx-28 2xl:mx-[200px] py-3 mb-6">
+        <div
+          id="header"
+          class="md:mx-10 lg:mx-16 xl:mx-28 2xl:mx-[200px] py-3 mb-6"
+        >
           <div>
             <h1 class="hidden md:block font-semibold text-[26px] mb-2">
               Lily Beach Resort & Spa, Maldives, With Pool, AI
@@ -279,7 +263,35 @@
         </div>
       </section>
 
-      <div class="mx-6 lg:mx-16 xl:mx-28 2xl:mx-[200px] md:mx-10">
+      <!-- <div class="stickynav hidden md:block">
+        <nav
+          id="nav_bar"
+          class="sticky_nav px-10 lg:px-16 py-5 xl:px-28 2xl:px-[200px]"
+        >
+          <div id="nav_left" class="flex items-center gap-5">
+            <a href="" class="">Photos</a>
+            <a href="" class="">Amenities</a>
+            <a href="" class="">Reviews</a>
+            <a href="" class="">Location</a>
+          </div>
+          <div id="nav_right" class="nav_right hidden">
+            <div class="flex items-center gap-4">
+              <h1 class="font-semibold">
+                ₹1,45,522 <span class="font-normal">night</span>
+              </h1>
+              <div
+                class="px-10 py-3 bg-[#ff385c] text-white font-medium rounded-lg text-center"
+              >
+                <button type="button">Check availability</button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div> -->
+      <div
+        id="main_body"
+        class="mx-6 lg:mx-16 xl:mx-28 2xl:mx-[200px] md:mx-10"
+      >
         <section class="border-b">
           <div>
             <div class="flex">
@@ -931,7 +943,7 @@
               </div>
               <div class="hidden md:block w-[42%]">
                 <div class="flex justify-end sticky top-0">
-                  <form class="my-1 w-[80%]">
+                  <form id="form_data" class="my-1 w-[80%]">
                     <div
                       class="border border-gray-300 shadow-xl rounded-lg p-6 mb-5"
                     >
@@ -1158,9 +1170,11 @@
                   <div class="text-justify mb-5">
                     <p class="tracking-tight">
                       I was born in 1978 in Izmir. After I have graduated
-                      Tourism and Hotel Management, I have worked at variou
-                      <span class="md:hidden">...</span>
-                      <span class="hidden md:block"
+                      Tourism and Hotel Management, I have worked at variou<span
+                        class="md:hidden"
+                        >...</span
+                      >
+                      <span class="hidden md:inline"
                         >s departments in tourism sector from house keeping to
                         guest relations. At t…</span
                       >
